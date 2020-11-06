@@ -1,15 +1,36 @@
-// The ui-variables file is provided by base themes provided by Atom.
-//
-// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
-// for a full listing of what's available.
+
 @import "ui-variables";
+
+// V0 - current version
 
 .terminal {
 }
 
 .status-bar .status-bar-left {
-  display: flex;
-   > .terminal__package {
-        padding: 0 10px;
-   }
+     display: flex;
+     > .terminal__package {
+          padding: 0 10px; display: flex; align-items: center; justify-content: center;
+
+          .terminal__new {
+              display: flex; align-items: center; justify-content: center;
+              cursor: pointer;
+              svg {
+                  height: 18px;
+              }
+          }
+
+          .terminal__views {
+              display: flex; flex-direction: row; align-items: center; justify-content: center;
+              padding-left: 10px;
+
+              .terminal__each {
+                  margin: 0 5px; display: flex; align-items: center; justify-content: center;
+                  cursor: pointer;
+
+                  svg {
+                      height: 18px;
+                  }
+              }
+          }
+     }
 }

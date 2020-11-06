@@ -1,6 +1,6 @@
 'use babel';
 
-import TerminalView from '../lib/terminal-view';
+import TerminalView from '../lib/v0/terminal-view';
 
 describe('TerminalView', () => {
   it('has one valid test', () => {
